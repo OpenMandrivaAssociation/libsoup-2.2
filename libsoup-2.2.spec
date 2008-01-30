@@ -43,7 +43,6 @@ This package contains libraries used by soup.
 Summary:        Development libraries, header files and utilities for soup
 Group:          Development/GNOME and GTK+
 Provides:	%{oname}-%{api_version}-devel = %{version}-%{release}
-Provides:	%{oname}-devel = %{version}-%{release}
 Requires:	%{lib_name} = %{version}
 Requires:	glib2-devel
 Conflicts:	%{_lib}soup-2.2_7-devel
