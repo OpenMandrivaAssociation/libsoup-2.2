@@ -5,8 +5,8 @@
 %define oname libsoup
 Summary: SOAP (Simple Object Access Protocol) implementation
 Name: libsoup-2.2
-Version: 2.2.104
-Release: %mkrel 3
+Version: 2.2.105
+Release: %mkrel 1
 License: GPL/LGPL
 Group: System/Libraries
 URL: http://www.gnome.org/
@@ -85,7 +85,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -n %develname
 %defattr(-,root,root,-)
 %doc ChangeLog
-%doc %{_datadir}/gtk-doc/html/%{oname}
+%{_datadir}/gtk-doc/html/%{name}
 %{_libdir}/*.so
 %{_libdir}/*.la
 %{_libdir}/*.a
