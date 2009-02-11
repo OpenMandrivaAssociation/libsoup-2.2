@@ -6,11 +6,12 @@
 Summary: SOAP (Simple Object Access Protocol) implementation
 Name: libsoup-2.2
 Version: 2.2.105
-Release: %mkrel 3
-License: GPL/LGPL
+Release: %mkrel 4
+License: LGPLv2
 Group: System/Libraries
 URL: http://www.gnome.org/
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%{oname}/%{oname}-%{version}.tar.bz2
+Patch: libsoup-2.2.105-fix-linking.patch
 BuildRoot: %{_tmppath}/%{oname}-%{version}-buildroot
 BuildRequires: glib2-devel
 BuildRequires: gnutls-devel
@@ -60,6 +61,8 @@ This package contains the files necessary to develop applications with soup.
 
 %prep
 %setup -q -n %oname-%version
+%patch -p1
+autoreconf -fi
 
 %build
 %configure2_5x --enable-gtk-doc
