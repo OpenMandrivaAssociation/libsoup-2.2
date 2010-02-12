@@ -12,6 +12,7 @@ Group: System/Libraries
 URL: http://www.gnome.org/
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%{oname}/%{oname}-%{version}.tar.bz2
 Patch: libsoup-2.2.105-fix-linking.patch
+Patch1: libsoup-2.2.105-fix-tests.patch
 BuildRoot: %{_tmppath}/%{oname}-%{version}-buildroot
 BuildRequires: glib2-devel
 BuildRequires: gnutls-devel
@@ -61,7 +62,7 @@ This package contains the files necessary to develop applications with soup.
 
 %prep
 %setup -q -n %oname-%version
-%patch -p1
+%apply_patches
 autoreconf -fi
 
 %build
