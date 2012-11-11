@@ -1,0 +1,66 @@
+--- libsoup-2.2.105/libsoup/soup-date.h.0002~	2007-10-05 18:42:47.000000000 +0200
++++ libsoup-2.2.105/libsoup/soup-date.h	2011-12-06 10:30:12.551025454 +0100
+@@ -7,7 +7,7 @@
+ #define SOUP_DATE_H 1
+ 
+ #include <time.h>
+-#include <glib/gmacros.h>
++#include <glib.h>
+ 
+ G_BEGIN_DECLS
+ 
+--- libsoup-2.2.105/libsoup/soup-method.h.0002~	2007-10-05 18:42:54.000000000 +0200
++++ libsoup-2.2.105/libsoup/soup-method.h	2011-12-06 10:30:13.038525254 +0100
+@@ -6,7 +6,7 @@
+ #ifndef SOUP_METHOD_H
+ #define SOUP_METHOD_H 1
+ 
+-#include <glib/gmacros.h>
++#include <glib.h>
+ 
+ G_BEGIN_DECLS
+ 
+--- libsoup-2.2.105/libsoup/soup-portability.h.0002~	2011-12-06 10:31:14.708525013 +0100
++++ libsoup-2.2.105/libsoup/soup-portability.h	2011-12-06 10:31:27.018525303 +0100
+@@ -6,7 +6,7 @@
+ #ifndef SOUP_PORTABILITY_H
+ #define SOUP_PORTABILITY_H
+ 
+-#include <glibconfig.h>
++#include <glib.h>
+ 
+ #ifdef G_OS_WIN32
+ 
+--- libsoup-2.2.105/libsoup/soup-status.h.0002~	2007-10-05 18:42:48.000000000 +0200
++++ libsoup-2.2.105/libsoup/soup-status.h	2011-12-06 10:30:13.383189643 +0100
+@@ -8,7 +8,7 @@
+ #ifndef SOUP_STATUS_H
+ #define SOUP_STATUS_H 1
+ 
+-#include <glib/gmacros.h>
++#include <glib.h>
+ 
+ G_BEGIN_DECLS
+ 
+--- libsoup-2.2.105/libsoup/soup-types.h.0002~	2007-10-05 18:42:47.000000000 +0200
++++ libsoup-2.2.105/libsoup/soup-types.h	2011-12-06 10:30:13.688525454 +0100
+@@ -6,7 +6,7 @@
+ #ifndef SOUP_TYPES_H
+ #define SOUP_TYPES_H 1
+ 
+-#include <glib/gtypes.h>
++#include <glib.h>
+ #include <glib-object.h>
+ 
+ #include <libsoup/soup-status.h>
+--- libsoup-2.2.105/tests/revserver.c.0002~	2011-12-06 10:39:27.820042405 +0100
++++ libsoup-2.2.105/tests/revserver.c	2011-12-06 10:39:37.418525632 +0100
+@@ -11,7 +11,7 @@
+ #include <libsoup/soup-address.h>
+ #include <libsoup/soup-socket.h>
+ 
+-#include <glib/gthread.h>
++#include <glib.h>
+ 
+ static void rev_read (SoupSocket *sock, GString *buf);
+ static void rev_write (SoupSocket *sock, GString *buf);

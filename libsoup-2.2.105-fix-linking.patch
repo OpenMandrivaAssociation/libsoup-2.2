@@ -1,0 +1,12 @@
+diff -p -up libsoup-2.2.105/config.h.in~ libsoup-2.2.105/config.h.in
+diff -p -up libsoup-2.2.105/tests/Makefile.am~ libsoup-2.2.105/tests/Makefile.am
+--- libsoup-2.2.105/tests/Makefile.am~	2008-02-08 03:19:00.000000000 +0100
++++ libsoup-2.2.105/tests/Makefile.am	2009-02-11 10:05:54.000000000 +0100
+@@ -26,6 +26,7 @@ noinst_PROGRAMS =	\
+ 
+ auth_test_SOURCES = auth-test.c apache-wrapper.c apache-wrapper.h
+ context_test_SOURCES = context-test.c
++context_test_LDADD = $(GLIB_LIBS)
+ date_SOURCES = date.c
+ dict_SOURCES = dict.c
+ dns_SOURCES = dns.c
