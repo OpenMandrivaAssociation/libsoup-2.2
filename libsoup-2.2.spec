@@ -63,7 +63,7 @@ This package contains the files necessary to develop applications with soup.
 
 %prep
 %setup -q -n %oname-%version
-%apply_patches
+%autopatch -p1
 autoreconf -fi
 
 %build
