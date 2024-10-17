@@ -9,7 +9,7 @@ Version: 2.2.105
 Release: %mkrel 7
 License: LGPLv2
 Group: System/Libraries
-URL: http://www.gnome.org/
+URL: https://www.gnome.org/
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%{oname}/%{oname}-%{version}.tar.bz2
 Patch: libsoup-2.2.105-fix-linking.patch
 Patch1: libsoup-2.2.105-fix-tests.patch
