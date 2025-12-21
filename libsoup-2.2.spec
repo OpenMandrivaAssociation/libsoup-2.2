@@ -15,6 +15,11 @@ Patch: libsoup-2.2.105-fix-linking.patch
 Patch1: libsoup-2.2.105-fix-tests.patch
 Patch2: libsoup-2.2.105-fix-glib-includes.patch
 BuildRoot: %{_tmppath}/%{oname}-%{version}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: glib2-devel
 BuildRequires: gnutls-devel
 BuildRequires: gtk-doc
